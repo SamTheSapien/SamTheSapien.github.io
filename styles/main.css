@@ -1629,8 +1629,31 @@ fieldset[disabled] .btn-success.active {
           box-shadow: none;
 }
 
-.btn-info {
+.btn-infoFace {
   background-color: #2CA8FF;
+  color: #FFFFFF;
+}
+
+
+.btn-infoInsta {
+  color: #FFFFFF;
+  /* For browsers that do not support gradients */
+  /* For Safari 5.1 to 6.0 */
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 25, 129,1)), to(rgba(128, 0, 128,1)));
+  background: linear-gradient(0deg, rgba(255, 25, 129,1),rgba(128, 0, 128,1));
+  /* Standard syntax */
+}
+
+.btn-infoTwitter {
+  background-color: #00acee;
+  color: #FFFFFF;
+}
+
+
+.btn-infoLinked {
+  background-color: #0e76a8;
   color: #FFFFFF;
 }
 
@@ -3402,7 +3425,7 @@ body {
 }
 
 .bg-default {
-  background-color: #888 !important;
+  background-color: #007bff !important;
 }
 
 .bg-primary {
@@ -4930,14 +4953,14 @@ Created using IcoMoon - icomoon.io
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.section-full-page[filter-color="purple"]:after, .section-full-page[filter-color="primary"]:after {
+.section-full-page[filter-color="blue"]:after, .section-full-page[filter-color="primary"]:after {
   background: rgba(227, 227, 227, 0.26);
   /* For browsers that do not support gradients */
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(227, 227, 227, 0.26)), to(rgba(55, 140, 63, 0.95)));
-  background: linear-gradient(0deg, rgba(227, 227, 227, 0.26), rgba(55, 140, 63, 0.95));
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(227, 227, 227, 0.26)), to(rgba(25, 181, 254, 1)));
+  background: linear-gradient(0deg, rgba(227, 227, 227, 0.26), rgba(25, 181, 254, 1));
   /* Standard syntax */
 }
 
@@ -5621,7 +5644,7 @@ Created using IcoMoon - icomoon.io
     /* For Safari 5.1 to 6.0 */
     /* For Opera 11.1 to 12.0 */
     /* For Firefox 3.6 to 15 */
-    background: -webkit-gradient(linear, left top, left bottom, from(#378C3F), color-stop(80%, #000));
+    background: -webkit-gradient(linear, left top, left bottom, from(#007bff), color-stop(80%, #000));
     background: linear-gradient(#007bff 0%, #000 80%);
     /* Standard syntax (must be last) */
     opacity: 0.76;
@@ -6336,8 +6359,8 @@ Created using IcoMoon - icomoon.io
     /* For Safari 5.1 to 6.0 */
     /* For Opera 11.1 to 12.0 */
     /* For Firefox 3.6 to 15 */
-    background: -webkit-gradient(linear, left top, left bottom, from(#378C3F), color-stop(80%, #000));
-    background: linear-gradient(#378C3F 0%, #000 80%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#0BB5FF), color-stop(80%, #000));
+    background: linear-gradient(#0BB5FF 0%, #000 80%);
     /* Standard syntax (must be last) */
     opacity: 0.76;
     filter: alpha(opacity=76);
@@ -7053,8 +7076,8 @@ Created using IcoMoon - icomoon.io
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(44, 44, 44, 0.2)), to(rgba(55, 140, 63, 0.6)));
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.6));
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(228, 241, 254, 0.5), to(rgba(44, 44, 44, 0.2))));
+  background: linear-gradient(0deg, rgba(228, 241, 254, 0.5), rgba(44, 44, 44, 0.2));
   /* Standard syntax */
 }
 

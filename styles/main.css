@@ -1348,10 +1348,9 @@
 .navbar .navbar-nav > a.btn.dropdown-toggle:focus,
 .show >
 .navbar .navbar-nav > a.btn.dropdown-toggle:hover {
-  background-color: #979797;
-  color: #FFFFFF;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  background-color: #FFFFFF	;
+  color:#000000;
+  border-color: #000000;
 }
 
 .btn:hover,
@@ -1567,7 +1566,7 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-primary.btn-link:hover, .btn-primary.btn-link:focus, .btn-primary.btn-link:active {
   background-color: transparent;
-  color: #40a249;
+  color: #008B8B;
   text-decoration: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1630,19 +1629,24 @@ fieldset[disabled] .btn-success.active {
 }
 
 .btn-infoFace {
-  background-color: #2CA8FF;
+  background-color: #3b5998;
   color: #FFFFFF;
 }
 
+.btn-infoYoutube {
+  background-color: #c4302b;
+  color: #FFFFFF;
+}
 
 .btn-infoInsta {
+  background-color:#E1306C;
   color: #FFFFFF;
   /* For browsers that do not support gradients */
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 25, 129,1)), to(rgba(128, 0, 128,1)));
-  background: linear-gradient(0deg, rgba(255, 25, 129,1),rgba(128, 0, 128,1));
+  /*background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 25, 129,1)), to(rgba(128, 0, 128,1)));
+  background: linear-gradient(0deg, rgba(255, 25, 129,1),rgba(128, 0, 128,1));*/
   /* Standard syntax */
 }
 
@@ -2630,10 +2634,10 @@ textarea.form-control:focus, textarea.form-control:active {
 .progress-container.progress-primary .progress-bar {
   background: #007bff;
 }
-
+/*Texto e percentagens*/
 .progress-container.progress-primary .progress-value,
 .progress-container.progress-primary .progress-badge {
-  color: #007bff;
+  color: #000000;
 }
 
 .progress-container.progress-info .progress {
@@ -7050,7 +7054,7 @@ Created using IcoMoon - icomoon.io
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  color: #fff;
+  color: #FFF;
 }
 
 .gallery figure.cc-effect:hover figcaption::after,
@@ -7123,7 +7127,7 @@ Created using IcoMoon - icomoon.io
 
 .cc-profile-image a:before {
   content: "";
-  border: 15px solid rgba(55, 140, 63, 0.6);
+  border: 15px solid #bfcad4;
   border-radius: 50%;
   height: 180px;
   width: 180px;
@@ -7285,7 +7289,19 @@ Created using IcoMoon - icomoon.io
 }
 
 .cc-instagram:hover i {
-  color: #405de6;
+  color: #E1306C;
+}
+.cc-white:hover i {
+  color: #FFFFFF;
+}
+.cc-black:hover i {
+  color: #000000;
+}
+.cc-youtube:hover i {
+  color: #FF0000;
+}
+.cc-linkedIn:hover i {
+  color: #2867B2;
 }
 
 /* Credit Style */

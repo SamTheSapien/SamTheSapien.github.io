@@ -201,7 +201,7 @@ nowuiKit = {
 var big_image;
 
 // Javascript just for Demo purpose, remove it from your project
-nowuiKitDemo = {
+/*nowuiKitDemo = {
     checkScrollForParallax: debounce(function() {
         var current_scroll = $(this).scrollTop();
 
@@ -216,7 +216,7 @@ nowuiKitDemo = {
     }, 6)
 
 }
-
+*/
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the

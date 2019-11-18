@@ -7316,3 +7316,8 @@ a.credit {
 .section {
   padding-bottom: 0;
 }
+
+/* Person Identification */
+.identification {
+  font-size: x-small;
+}

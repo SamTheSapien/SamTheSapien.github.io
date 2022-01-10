@@ -10,6 +10,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/aos.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/externalCSS.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
 
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
@@ -38,13 +39,25 @@
         <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
           <div class="container">
             <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Curriculum Vitae</a>
-              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
             </div>
             <div class="collapse navbar-collapse justify-content-end" id="navigation">
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
-                <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item">
+                  <div class="dropdown" class="nav-link smooth-scroll" >
+                    <button  class="nav-link smooth-scroll" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" background-color:transparent;border:none;color: white" >
+                       Portfolio
+                    </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item"  class="nav-link smooth-scroll" href="#portfolio">Projects</a>
+                        <a class="dropdown-item" class="nav-link smooth-scroll" href="#portfolio">Certificates</a>
+                        <a class="dropdown-item"  class="nav-link smooth-scroll" href="#portfolio">Hobbies</a>
+                        </div>
+                  </div>
+                </li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
                 <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
               </ul>
@@ -55,25 +68,27 @@
     </header>
     <div class="page-content">
       <div>
-<div class="profile-page">
+<div class="profile-page" >
   <div class="wrapper">
     <div class="page-header page-header-small" filter-color="green">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('images/background.jpg');"></div>
+      <div class="page-header-image" data-parallax="true" style="background-image: url('images/util/background.jpg');"></div>
       <div class="container">
         <div class="content-center">
-          <div class="cc-profile-image"><a href="#"><img src="images/eu.jpg" alt="Image"/></a></div>
+          <div class="cc-profile-image"><a href="#"><img src="images/util/eu.jpg" alt="Image"/></a></div>
           <div class="h2 title">Samuel Viegas</div>
-          <p class="category text-white">MsC in Computer Science | Cybersecurity | Pentester | Cryptography | CTF</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">ASK CV</a>
+          <p class="category text-white">MsC in Computer Science | Cybersecurity | Pentester | Cryptography | CTF</p>
+          <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Ask CV </a>
+          <!--<a class="btn btn-primary" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a>-->
         </div>
       </div>
-      <div class="section">
+      <div class="section" >
         <div class="container">
           <div class="button-container">
             <a class="cc-linkedIn btn btn-infoLinked btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/samuel-viegas-1b1493176/" rel="tooltip" target="_blank" title="Follow me on LinkedIn"><i class="fa fa-linkedin"></i></a>
-            <a class="cc-facebook btn btn-infoFace btn-round btn-lg btn-icon" href="#" rel="tooltip" title="How" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a class="cc-instagram btn btn-infoInsta btn-round btn-lg btn-icon" href="#" rel="tooltip" title="good" target="_blank"><i class="fa fa-instagram"></i></a>
-             <a class="cc-youtube btn btn-infoYoutube btn-round btn-lg btn-icon" href="#" rel="tooltip" title="is your" target="_blank"><i class="fa fa-youtube" ></i></a>
-            <a class="cc-twitter btn btn-infoTwitter btn-round btn-lg btn-icon" href="#" rel="tooltip" title="OSINT ?" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a class="cc-facebook btn btn-infoFace btn-round btn-lg btn-icon" href="#" rel="tooltip" title="How"><i class="fa fa-facebook"></i></a>
+            <a class="cc-instagram btn btn-infoInsta btn-round btn-lg btn-icon" href="#" rel="tooltip" title="good"><i class="fa fa-instagram"></i></a>
+             <a class="cc-youtube btn btn-infoYoutube btn-round btn-lg btn-icon" href="#" rel="tooltip" title="is your"><i class="fa fa-youtube" ></i></a>
+            <a class="cc-twitter btn btn-infoTwitter btn-round btn-lg btn-icon" href="#" rel="tooltip" title="OSINT ?"><i class="fa fa-twitter"></i></a>
           </div>
         </div>
       </div>
@@ -87,9 +102,10 @@
         <div class="col-lg-6 col-md-12">
           <div class="card-body">
             <div class="h4 mt-0 title">About</div>
-            <p>Hello! My name is Samuel Viegas and im a Computer Science student. Im on my 20's and doing my Master´s Degree on NOVA FCT. </p>
-            <p>I love Cybersecurity, Cryptography and Artificial Intelligence. </p>
-            <p>I also like WebDesign and IoT.</p>
+            <p>Hello! My name is Samuel Viegas and im a Computer Science student. Im on my 22's and doing my Master´s Degree on NOVA FCT.
+            <p>I already have completed my Bachelor's degree and a Professional Qualification in Academia Nacional de Cibersegurança.</p>
+            <p>I like Cybersecurity, Cryptography and Artificial Intelligence. I also like WebDesign and IoT.</p>
+            <p>In my free time i like to develop my skills and train both my body and mind.</p>
           </div>
         </div>
         <div class="col-lg-6 col-md-12">
@@ -101,7 +117,10 @@
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-              <div class="col-sm-8">samuelviegas@protonmail.com</div>
+              <div class="col-sm-8">
+                <!-- Web Scrapping Protection / Cry bot noobs -->
+                    <span>s</span><span>a</span><span>m</span><span>u</span><span>e</span><span>l</span><span>v</span><span>i</span><span>e</span><span>g</span><span>a</span><span>s</span><span>@</span><span>p</span><span>r</span><span>o</span><span>t</span><span>o</span><span>n</span><span>m</span><span>a</span><span>i</span><span>l</span><span>.</span><span>c</span><span>o</span><span>m</span>
+              </div>
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
@@ -126,30 +145,30 @@
           <div class="col-md-6">
             <div class="progress-container progress-primary"><span class="progress-badge">Cyber Security</span>
               <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 96%;"></div><span class="progress-value">96%</span>
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 99%;"></div><span class="progress-value">99%</span>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="progress-container progress-primary"><span class="progress-badge">Cryptography</span>
               <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 93%;"></div><span class="progress-value">93%</span>
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div><span class="progress-value">95%</span>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">HTML</span>
+            <div class="progress-container progress-primary"><span class="progress-badge">Terminal (Shell)</span>
               <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 84%;"></div><span class="progress-value">84%</span>
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 99%;"></div><span class="progress-value">99%</span>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">CSS</span>
+            <div class="progress-container progress-primary"><span class="progress-badge">Python</span>
               <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">90%</span>
               </div>
             </div>
           </div>
@@ -172,16 +191,16 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">Bootstrap</span>
+            <div class="progress-container progress-primary"><span class="progress-badge">IoT</span>
               <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 64%;"></div><span class="progress-value">64%</span>
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="progress-container progress-primary"><span class="progress-badge">TensorFlow</span>
+            <div class="progress-container progress-primary"><span class="progress-badge">TensorFlow & Skicit Learn</span>
               <div class="progress">
-                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 55%;"></div><span class="progress-value">50%</span>
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">60%</span>
               </div>
             </div>
           </div>
@@ -209,14 +228,24 @@
         <div class="ml-auto mr-auto">
           <div class="row">
             <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#projects">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <a href="https://app.hackthebox.com/profile/186611"  target=”_blank”>
                   <figure class="cc-effect"><img src="images/projects/htb.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">HackTheBox</div>
-                      <p>Penetration Testing Boxes</p>
+                      <p>Professional Penetration Testing</p>
                     </figcaption>
                   </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#projects">
+               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                 <a href="https://cryptohack.org/"  target=”_blank”>
+                  <figure class="cc-effect"><img src="images/projects/CryptoHackLogo.png" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Crypto Hack</div>
+                      <p>Learn Modern Cryptography</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <a href="https://www.raspberrypi.org/"  target=”_blank”>
                   <figure class="cc-effect"><img src="images/projects/raspberry.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">Raspberry Pi</div>
@@ -225,7 +254,16 @@
                   </figure></a></div>
             </div>
             <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#projects">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <a href="https://tryhackme.com/"  target=”_blank”>
+                  <figure class="cc-effect"><img src="images/projects/THMlogo.png" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Try Hack Me</div>
+                      <p>Cyber Security Training</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <a href="https://www.cybrary.it/" target=”_blank”>
                   <figure class="cc-effect"><img src="images/projects/cybrary-logo-white.png" alt="Image"/>
                     <figcaption>
                       <div class="h4">Cybrary</div>
@@ -236,7 +274,7 @@
                   <figure class="cc-effect"><img src="images/projects/Tensorflow.jpg" alt="Image"/>
                     <figcaption>
                       <div class="h4">Neural Networks</div>
-                      <p>Deep Learning using Tensorflow</p>
+                      <p>Deep Learning using Tensorflow and Skicit Learn</p>
                     </figcaption>
                   </figure></a></div>
             </div>
@@ -263,6 +301,13 @@
                   </figure></a></div>
             </div>
             <div class="col-md-6">
+                <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#certificates">
+                  <figure class="cc-effect"><img src="images/cert/Cert_Autopsy.png" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Autopsy Certificate</div>
+                      <p>Forensic Autopsy certificate</p>
+                    </figcaption>
+                  </figure></a></div>
               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#certificates">
                   <figure class="cc-effect"><img src="images/cert/End%20User%20Mobile%20Device.PNG.png" alt="Image"/>
                     <figcaption>
@@ -277,6 +322,7 @@
                       <p>Portugal CyberSecurity National Center</p>
                     </figcaption>
                   </figure></a></div>
+
             </div>
           </div>
         </div>
@@ -371,11 +417,12 @@
 <div class="section">
   <div class="container cc-education">
     <div class="h4 text-center mb-4 title">Education</div>
+
     <div class="card">
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-education-header">
-            <p>now - 2017</p>
+            <p>2017 - now</p>
             <div class="h5">Master's Degree<p></p>(Level 7)</div>
           </div>
         </div>
@@ -383,11 +430,32 @@
           <div class="card-body">
             <div class="h5"> Master's Degree in Computer Science</div>
             <p class="category">NOVA FCT</p>
-            <p>Im attending the Master's Degree in Computer Science course on NOVA FCT. Once completed, gives the level 7 by the european qualification board. </p>
+            <p>Im attending the Master's Degree in Computer Science course on NOVA FCT. Bachelor's degree already completed.</p>
+            <p>Once Master´s completed, gives the level 7 by the european qualification board.</p>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>2020 - 2021</p>
+            <div class="h5">Professional Qualification<p></p></div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5"> Course of Academia Nacional de Cibersegurança</div>
+            <p class="category">Academia Nacional de Cibersegurança</p>
+            <p>Course with the foundations of Cibersecurity aimed to create professionals in 1 year.</p>
+            <p>It was adressed topics such as Operative Systems, Criptography, Law and Cybercrime, Eletronics, Programming, InfoSec, Networks, Pentesting and Wi-fi hacking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="card">
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
@@ -411,7 +479,7 @@
 
 
 <div class="section" id="contact">
-  <div class="cc-contact-information" style="background-image: url('images/staticmap.png');">
+  <div class="cc-contact-information" style="background-image: url('images/util/staticmap.png');">
     <div class="container">
       <div class="cc-contact">
         <div class="row">
@@ -464,7 +532,8 @@
                     <p class="mb-0"><strong>Address </strong></p>
                     <p class="pb-2">Lisboa</p>
                     <p class="mb-0"><strong>Email</strong></p>
-                    <p>samuelviegas@protonmail.com</p>
+                    <!-- Web Scrapping Protection / Cry bot noobs -->
+                    <span>s</span><span>a</span><span>m</span><span>u</span><span>e</span><span>l</span><span>v</span><span>i</span><span>e</span><span>g</span><span>a</span><span>s</span><span>@</span><span>p</span><span>r</span><span>o</span><span>t</span><span>o</span><span>n</span><span>m</span><span>a</span><span>i</span><span>l</span><span>.</span><span>c</span><span>o</span><span>m</span>
                   </div>
                 </div>
               </div>
@@ -479,10 +548,10 @@
     <footer class="footer">
       <div class="container text-center">
         <a class="cc-linkedIn btn btn-link "href="https://www.linkedin.com/in/samuel-viegas-1b1493176/" target="_blank"><i class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a>
-        <a class="cc-facebook btn btn-link" href="#" target="_blank"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a>
-        <a class="cc-instagram btn btn-link" href="#" target="_blank"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a>
-        <a class="cc-youtube btn btn-link" href="#" target="_blank"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
-        <a class="cc-twitter btn btn-link " href="#" target="_blank"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a>
+        <a class="cc-facebook btn btn-link" href="#" ><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a>
+        <a class="cc-instagram btn btn-link" href="#" ><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a>
+        <a class="cc-youtube btn btn-link" href="#" ><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+        <a class="cc-twitter btn btn-link " href="#" ><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a>
         
         </div>
       <div class="h4 title text-center">Samuel Viegas</div>
@@ -491,11 +560,18 @@
         <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
       </div>
     </footer>
+
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-primary btn-floating btn-lg smooth-scroll" id="btn-back-to-top">
+      <i class="fa fa-arrow-up smooth-scroll" href="#"></i>
+    </button>
+
     <script src="js/core/jquery.3.2.1.min.js"></script>
     <script src="js/core/popper.min.js"></script>
     <script src="js/core/bootstrap.min.js"></script>
     <script src="js/now-ui-kit.js?v=1.1.0"></script>
     <script src="js/aos.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="js/btn-to-top.js"></script>
   </body>
 </html>

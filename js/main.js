@@ -232,16 +232,19 @@ $(document).ready(function() {
         });
     }
 
+
 	/* Google Map Setup */
+    /*
     if($('#map').length) {
         initMap();
      };
 
 });
-
+*/
 /* -----------------------------------
   		14. Google Map
 ----------------------------------- */
+/*
 function initMap() {
     var latitude = $("#map").data('latitude'),
         longitude = $("#map").data('longitude'),
@@ -266,3 +269,4 @@ function initMap() {
         title: "We are here!"
     });
 }
+*/

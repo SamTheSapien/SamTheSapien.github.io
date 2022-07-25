@@ -1,6 +1,6 @@
 <?php
-	$to = "19.malyarchuk.97@gmail.com";
-	$tema = "Baha";
+	$to = "sm.sapien@protonmail.com";
+	$tema = "Landing Page Interest by Contact Form";
 	$message = "Name: ".$_POST['name']."<br>";
 	$message .= "Email: ".$_POST['email']."<br>";
 	$message .= "Message: ".$_POST['note']."<br>";

@@ -1,5 +1,5 @@
 <?php
-	$to = "sm.sapien@protonmail.com";
+	$to = "sm.sapien@pm.com";
 	$tema = "Landing Page Interest by Contact Form";
 	$message = "Name: ".$_POST['name']."<br>";
 	$message .= "Email: ".$_POST['email']."<br>";

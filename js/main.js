@@ -34,29 +34,6 @@ $(window).on('load', function() {
 	----------------------------------- */
 	$("#preloader").delay(1000).addClass('loaded');
 
-	/* -----------------------------------
-			  2. Sound Setup
-	----------------------------------- */
-	$('body').append('<audio loop autoplay volume="1" id="audio-player"><source src="music.mp3" type="audio/mpeg"></audio>');
-    	var audio = document.getElementById("audio-player");
-    	audio.volume = 0.2;
-
-	if($(window).length) {
-		$('.music-bg').css({'visibility':'visible'});
-		$('body').addClass("audio-on");
-		if ($('body').hasClass('audio-off')) {
-        	$('body').removeClass('audio-on');
-		}
-		$(".music-bg").on('click', function() {
-			$('body').toggleClass("audio-on audio-off");
-			if ($('body').hasClass('audio-off')) {
-				audio.pause();
-			}
-			if ($('body').hasClass('audio-on')) {
-				audio.play();
-			}
-		});
-	}
 
 	/* -----------------------------------
 			3. Isotope Portfolio Setup
@@ -208,8 +185,9 @@ $(document).ready(function() {
             submitHandler: function (form) {
                 $.ajax({
                     type: "POST",
-                    url: "/mail.php",
+                    url: $(form).attr("action"),
                     data: $(form).serialize(),
+                    dataType: "json",
                     success: function () {
                         $( "#loader").hide();
                         $( "#success").slideDown( "slow" );
@@ -233,39 +211,4 @@ $(document).ready(function() {
     }
 
 
-	/* Google Map Setup */
-
-    if($('#map').length) {
-        initMap();
-     };
-
 });
-
-/* -----------------------------------
-  		14. Google Map
------------------------------------ */
-
-function initMap() {
-    var latitude = $("#map").data('latitude'),
-        longitude = $("#map").data('longitude'),
-        zoom = $("#map").data('zoom'),
-        cordinates = new google.maps.LatLng(latitude, longitude);
-
-    var styles = [{"stylers":[{"saturation":-100},{"gamma":0.8},{"lightness":4},{"visibility":"on"}]},{"featureType":"landscape.natural","stylers":[{"visibility":"on"},{"color":"#5dff00"},{"gamma":4.97},{"lightness":-5},{"saturation":100}]}];
-
-        var mapOptions = {
-        zoom: zoom,
-        center: cordinates,
-        mapTypeControl: false,
-        disableDefaultUI: true,
-        zoomControl: true,
-        scrollwheel: false,
-        styles: styles
-    };
-    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-    var marker = new google.maps.Marker({
-        position: cordinates,
-        map: map,
-        title: "We are here!"
-    });
-}

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
 
@@ -19,8 +19,8 @@
 		<meta property="og:description" content="My personal CV website. I am  a Cybersecurity student, Pentester specialist,Forensics learner,CTF player, Hacker! Also, check my walktroughs blog!">
 		<meta property="og:image" content="https://samthesapien.github.io/img/website_preview.png">
 
-		<!-- Title -->
-		<title>Samuel Viegas CV</title>
+		<!-- Favicon -->
+		<link rel="icon" href="favicon.ico">
 
 		<!-- CSS Plugins -->
         <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
@@ -56,10 +56,6 @@
 
 		<!-- Main Site -->
 		<div id="home">
-  		<div id="about">
-    	<div id="resume">
-     	<div id="portfolio">
-        <div id="blog">
 		<div id="contact">
 
 			<div class="header-mobile">
@@ -80,7 +76,7 @@
             			<a href="#" class="icon-h fas fa-house-damage"></a>
 					</li>
 					<li data-tooltip="about" data-position="top">
-            			<a href="https://samthesapien.github.io/CV_Website/" class="icon-a fas fa-user-tie" target=”_blank”></a>
+            			<a href="https://samthesapien.github.io/CV_Website/" class="icon-a fas fa-user-tie" target="_blank" rel="noopener noreferrer"></a>
 					</li>
 					<!--
 					<li data-tooltip="about" data-position="top">
@@ -95,10 +91,10 @@
 					</li>
 					-->
 					<li data-tooltip="blog" data-position="top">
-            			<a href="https://samthesapien.gitbook.io/samthesapien-blog/" class="icon-b fas fa-book" target=”_blank”></a>
+            			<a href="https://samthesapien.gitbook.io/samthesapien-blog/" class="icon-b fas fa-book" target="_blank" rel="noopener noreferrer"></a>
 					</li>
 					<li data-tooltip="HTB" data-position="top">
-						<a href="https://app.hackthebox.com/profile/186611" class="icon-c fas fa-cube" target=”_blank”></a>
+						<a href="https://app.hackthebox.com/profile/186611" class="icon-c fas fa-cube" target="_blank" rel="noopener noreferrer"></a>
 					</li>
 					<li data-tooltip="contact" data-position="bottom">
 						<a href="#contact" class="icon-c fas fa-envelope"></a>
@@ -106,22 +102,9 @@
           		</ul>
 
 				<!--  Sound wave -->
-				<!--
-    			<a class="music-bg">
-      				<div class="lines">
-        				<span></span>
-        				<span></span>
-        				<span></span>
-        				<span></span>
-						<span></span>
-						<span></span>
-      				</div>
-					<p> Sound </p>
-    			</a>
-				-->
 
 				<div >
-					<a class="logo" href="https://samthesapien.gitbook.io/samthesapien-blog/" target=”_blank” >
+					<a class="logo" href="https://samthesapien.gitbook.io/samthesapien-blog/" target="_blank" rel="noopener noreferrer" >
 					<p>Check my blog!</p>
 					<p> With Hack The Box </p>
 					<p>and CTF walkthroughs</p>
@@ -166,17 +149,11 @@
             		</div>
 
 					<!-- Social -->
-					<!--
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                			<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                			<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-					-->
 					<div class="social">
             			<ul>
-							<li><a href="https://github.com/SamTheSapien" target=”_blank”><i class="fab fa-github"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/samuel-viegas-1b1493176/" target=”_blank”><i class="fab fa-linkedin" ></i></a></li>
-							<li><a href="https://t.me/samuelviegas" target=”_blank”><i class="fas fa-paper-plane"></i></a></li>
+							<li><a href="https://github.com/SamTheSapien" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/samuel-viegas-1b1493176/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" ></i></a></li>
+							<li><a href="https://t.me/samuelviegas" target="_blank" rel="noopener noreferrer"><i class="fas fa-paper-plane"></i></a></li>
             			</ul>
         			</div>
 			  	</section>
@@ -1109,10 +1086,11 @@
 						<div class="row">
 							<div class="col-lg-4 col-sm-12 info">
 								<i class="fas fa-paper-plane"></i>
-								<!-- Web Scrapping Protection / Cry bot noobs -->
-								<p>
-								<span style="color:white">s</span><span style="color:white">a</span><span style="color:white">m</span><span style="color:white">u</span><span style="color:white">e</span><span style="color:white">l</span><span style="color:white">v</span><span style="color:white">i</span><span style="color:white">e</span><span style="color:white">g</span><span style="color:white">a</span><span style="color:white">s</span><span style="color:white">@</span><span style="color:white">p</span><span style="color:white">r</span><span style="color:white">o</span><span style="color:white">t</span><span style="color:white">o</span><span style="color:white">n</span><span style="color:white">m</span><span style="color:white">a</span><span style="color:white">i</span><span style="color:white">l</span><span style="color:white">.</span><span style="color:white">c</span><span style="color:white">o</span><span style="color:white">m</span>
-								</p>
+								<p id="contact-email"></p>
+								<script>
+									var u = 'samuelviegas'; var d = 'protonmail.com';
+									document.getElementById('contact-email').innerHTML = u + '@' + d;
+								</script>
           						<span>Email</span>
 							</div>
 							<div class="col-lg-4 col-sm-12 info">
@@ -1132,7 +1110,7 @@
 					<div class="row mt-100">
 						<div class="col-lg-12 col-sm-12">
 							<div class="contact-form ">
-                        		<form method="post" class="box-1 contact-valid" id="contact-form">
+                        		<form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="box-1 contact-valid" id="contact-form">
 									<div class="row">
                             			<div class="col-lg-6 col-sm-12">
                                 			<input type="text" name="name" id="name" class="form-control" placeholder="Name *">
@@ -1168,23 +1146,10 @@
 
 
 					<!--Google Map Start-->
-					<!--
-					<div class="google-map box-1 mt-100 mb-100">
-						<div class="row">
-							<div class="col-lg-12">
-								</script>
-								<div id="map" data-latitude="40.712775" data-longitude="-74.005973" data-zoom="14"></div>
-							</div>
-						</div>
-					</div>
-					-->
-            	</section>
+             	</section>
           	</div>
 
         </div>
-      	</div>
-    	</div>
-  		</div>
 		</div>
 		</div>
 

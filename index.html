@@ -64,7 +64,7 @@
 
 			<div class="header-mobile">
 				<a class="header-toggle"><i class="fas fa-bars"></i></a>
-				<h2>CV Landing Page</h2>
+				<h2 data-i18n=\"nav_cv\">CV Landing Page</h2>
 			</div>
 
 			<!-- Left Block -->
@@ -112,9 +112,9 @@
 				<div>
 					<a class="logo" href="https://samthesapien.gitbook.io/samthesapien-blog/" target="_blank"
 						rel="noopener noreferrer">
-						<p>Check my blog!</p>
-						<p> With Hack The Box </p>
-						<p>and CTF walkthroughs</p>
+						<p data-i18n=\"blog_1\">Check my blog!</p>
+						<p data-i18n=\"blog_2\"> With Hack The Box </p>
+						<p data-i18n=\"blog_3\">and CTF walkthroughs</p>
 					</a>
 				</div>
 
@@ -136,12 +136,12 @@
 					<div class="banner">
 						<h1>Samuel Viegas</h1>
 						<p class="cd-headline rotate-1">
-							<span>I am a</span>
+							<span data-i18n=\"banner_prefix\">I am a</span>
 							<span class="cd-words-wrapper">
-								<b class="is-visible">Cybersecurity student</b>
-								<b>Pentester specialist</b>
-								<b>Forensics learner</b>
-								<b>CTF player</b>
+								<b class=\"is-visible\" data-i18n=\"role_1\">Cybersecurity student</b>
+								<b data-i18n=\"role_2\">Pentester specialist</b>
+								<b data-i18n=\"role_3\">Forensics learner</b>
+								<b data-i18n=\"role_4\">CTF player</b>
 								<b>Ethical Hacker</b>
 							</span>
 						</p>
@@ -150,8 +150,8 @@
 					<!-- Language -->
 					<div class="lang">
 						<ul>
-							<li><a href="index.html" class="active">eng</a></li>
-							<li><a href="index-pt.html">pt</a></li>
+							<li><a href=\"javascript:void(0)\" onclick=\"setLanguage('en')\" class=\"active\">eng</a></li>
+							<li><a href=\"javascript:void(0)\" onclick=\"setLanguage('pt')\">pt</a></li>
 						</ul>
 					</div>
 
@@ -1085,7 +1085,7 @@
 
 					<!-- Section Title -->
 					<div class="header-page mt-70 mob-mt">
-						<h2>Contact</h2>
+						<h2 data-i18n=\"contact_title\">Contact</h2>
 						<span></span>
 					</div>
 
@@ -1101,17 +1101,17 @@
 									var u = 'samuelviegas'; var d = 'protonmail.com';
 									document.getElementById('contact-email').innerHTML = u + '@' + d;
 								</script>
-								<span>Email</span>
+								<span data-i18n=\"contact_email\">Email</span>
 							</div>
 							<div class="col-lg-4 col-sm-12 info">
 								<i class="fas fa-map-marker-alt"></i>
-								<p>Lisbon, Portugal</p>
-								<span>Address</span>
+								<p data-i18n=\"contact_loc\">Lisbon, Portugal</p>
+								<span data-i18n=\"contact_addr\">Address</span>
 							</div>
 							<div class="col-lg-4 col-sm-12 info">
 								<i class="fas fa-phone"></i>
-								<p>Request personally</p>
-								<span>Phone</span>
+								<p data-i18n=\"contact_req\">Request personally</p>
+								<span data-i18n=\"contact_phone\">Phone</span>
 							</div>
 						</div>
 					</div>
@@ -1125,18 +1125,18 @@
 									<div class="row">
 										<div class="col-lg-6 col-sm-12">
 											<input type="text" name="name" id="name" class="form-control"
-												placeholder="Name *">
+												placeholder=\"Name *\" data-i18n=\"form_name\">
 										</div>
 										<div class="col-lg-6 col-sm-12">
 											<input type="email" name="email" id="email" class="form-control"
-												placeholder="Email *">
+												placeholder=\"Email *\" data-i18n=\"form_email\">
 										</div>
 										<div class="col-lg-12 col-sm-12">
 											<textarea class="form-control" name="note" id="note"
-												placeholder="Your Message"></textarea>
+												placeholder=\"Your Message\" data-i18n=\"form_msg\"></textarea>
 										</div>
 										<div class="col-lg-12 col-sm-12 text-center">
-											<button type="submit" class="btn-st">Send Message</button>
+											<button type="submit" class="btn-st" data-i18n=\"form_send\">Send Message</button>
 											<div id="loader">
 												<i class="fas fa-sync"></i>
 											</div>
@@ -1193,6 +1193,7 @@
 		});
 	</script>
 
+    <script src="js/translations.js"></script>
 </body>
 
 </html>

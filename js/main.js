@@ -1,5 +1,5 @@
 /* -----------------------------------------------
-					Js Main
+                    Js Main
 --------------------------------------------------
 
     Template Name: Baha - Personal Portfolio Template
@@ -10,40 +10,40 @@
 
 Table of Content
 
-	1. Preloader
-	2. Sound Start
-	3. Isotope Portfolio Setup
-	4. Blogs Masonry Setup
-	5. Active Current Link
-	6. Mobile Toggle Click Setup
-	7. Testimonials OwlCarousel
-	8. Chart Setup
-	9. Portfolio Tilt Setup
-	10. Portfolio Image Link
-	11. Portfolio Video Link
-	12. Blog Video Link
-	13. Validate Contact Form
-	14. Google Map
+    1. Preloader
+    2. Sound Start
+    3. Isotope Portfolio Setup
+    4. Blogs Masonry Setup
+    5. Active Current Link
+    6. Mobile Toggle Click Setup
+    7. Testimonials OwlCarousel
+    8. Chart Setup
+    9. Portfolio Tilt Setup
+    10. Portfolio Image Link
+    11. Portfolio Video Link
+    12. Blog Video Link
+    13. Validate Contact Form
+    14. Google Map
 
 ----------------------------------- */
 
-$(window).on('load', function() {
+$(window).on('load', function () {
 
-	/* -----------------------------------
-				1. Preloader
-	----------------------------------- */
-	$("#preloader").delay(1000).addClass('loaded');
+    /* -----------------------------------
+                1. Preloader
+    ----------------------------------- */
+    $("#preloader").delay(1000).addClass('loaded');
 
 
-	/* -----------------------------------
-			3. Isotope Portfolio Setup
-	----------------------------------- */
-    if( $('.portfolio-items').length ) {
+    /* -----------------------------------
+            3. Isotope Portfolio Setup
+    ----------------------------------- */
+    if ($('.portfolio-items').length) {
         var $elements = $(".portfolio-items"),
             $filters = $('.portfolio-filter ul li');
         $elements.isotope();
 
-        $filters.on('click', function(){
+        $filters.on('click', function () {
             $filters.removeClass('active');
             $(this).addClass('active');
             var selector = $(this).data('filter');
@@ -62,36 +62,36 @@ $(window).on('load', function() {
         });
     }
 
-	/* -----------------------------------
-			4. Blogs Masonry Setup
-	----------------------------------- */
+    /* -----------------------------------
+            4. Blogs Masonry Setup
+    ----------------------------------- */
     $('.blog-masonry').isotope({ layoutMode: 'moduloColumns' });
 
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
     "use strict";
 
-	/* -----------------------------------
-			5. Active Current Link
-	----------------------------------- */
-    $('.header-main ul li a').on('click',function() {
-        if($('.header-main.on').length) {
+    /* -----------------------------------
+            5. Active Current Link
+    ----------------------------------- */
+    $('.header-main ul li a').on('click', function () {
+        if ($('.header-main.on').length) {
             $('.header-main').removeClass('on');
         }
     });
 
-	/* -----------------------------------
-		6. Mobile Toggle Click Setup
-	----------------------------------- */
-    $('.header-toggle').on('click', function() {
+    /* -----------------------------------
+        6. Mobile Toggle Click Setup
+    ----------------------------------- */
+    $('.header-toggle').on('click', function () {
         $('.header-main').toggleClass('on');
     });
 
-	/* -----------------------------------
-	      7. Testimonials OwlCarousel
-	----------------------------------- */
-	$(".testimonial .owl-carousel").owlCarousel({
+    /* -----------------------------------
+          7. Testimonials OwlCarousel
+    ----------------------------------- */
+    $(".testimonial .owl-carousel").owlCarousel({
         loop: true,
         margin: 30,
         autoplay: true,
@@ -112,28 +112,28 @@ $(document).ready(function() {
         },
     });
 
-	/* -----------------------------------
-	      	8. Chart Setup
-	----------------------------------- */
-	if ($('.chart').length > 0) {
-	    $('.chart').easyPieChart({
-          trackColor:'#0e0f10',
-	      scaleColor:false,
-	      easing: 'easeOutBounce',
-	      scaleLength: 4,
-	      lineCap: 'square',
-	      lineWidth:5,
-	      size:130,
-	      animate: {
-	                duration: 2500,
-	                enabled: true
-	    	}
-	 	});
-	 }
+    /* -----------------------------------
+                8. Chart Setup
+    ----------------------------------- */
+    if ($('.chart').length > 0) {
+        $('.chart').easyPieChart({
+            trackColor: '#0e0f10',
+            scaleColor: false,
+            easing: 'easeOutBounce',
+            scaleLength: 4,
+            lineCap: 'square',
+            lineWidth: 5,
+            size: 130,
+            animate: {
+                duration: 2500,
+                enabled: true
+            }
+        });
+    }
 
-	/* -----------------------------------
-	      	9. Portfolio Tilt Setup
-	----------------------------------- */
+    /* -----------------------------------
+                9. Portfolio Tilt Setup
+    ----------------------------------- */
     $('.pt-portfolio .portfolio-items .item figure').tilt({
         maxTilt: 3,
         glare: true,
@@ -141,31 +141,31 @@ $(document).ready(function() {
         reverse: true
     });
 
-	/* -----------------------------------
-	      10. Portfolio Image Link
-	----------------------------------- */
-	$(".portfolio-items .image-link").magnificPopup({
-		type: "image"
-	});
+    /* -----------------------------------
+          10. Portfolio Image Link
+    ----------------------------------- */
+    $(".portfolio-items .image-link").magnificPopup({
+        type: "image"
+    });
 
-	/* -----------------------------------
-	      11. Portfolio Video Link
-	----------------------------------- */
-	$(".portfolio-items .video-link").magnificPopup({
-		type: "iframe"
-	});
+    /* -----------------------------------
+          11. Portfolio Video Link
+    ----------------------------------- */
+    $(".portfolio-items .video-link").magnificPopup({
+        type: "iframe"
+    });
 
-	/* -----------------------------------
-	      12. Blog Video Link
-	----------------------------------- */
-	$(".pt-blog .blog-item .thumbnail .btn-play").magnificPopup({
-		type: "iframe"
-	});
+    /* -----------------------------------
+          12. Blog Video Link
+    ----------------------------------- */
+    $(".pt-blog .blog-item .thumbnail .btn-play").magnificPopup({
+        type: "iframe"
+    });
 
-	/* -----------------------------------
-	    13. Validate Contact Form
-	----------------------------------- */
-	if ($("#contact-form").length) {
+    /* -----------------------------------
+        13. Validate Contact Form
+    ----------------------------------- */
+    if ($("#contact-form").length) {
         $("#contact-form").validate({
             rules: {
                 name: {
@@ -188,19 +188,22 @@ $(document).ready(function() {
                     url: $(form).attr("action"),
                     data: $(form).serialize(),
                     dataType: "json",
+                    headers: {
+                        "Accept": "application/json"
+                    },
                     success: function () {
-                        $( "#loader").hide();
-                        $( "#success").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#success").slideUp( "slow" );
+                        $("#loader").hide();
+                        $("#success").slideDown("slow");
+                        setTimeout(function () {
+                            $("#success").slideUp("slow");
                         }, 3000);
                         form.reset();
                     },
-                    error: function() {
-                        $( "#loader").hide();
-                        $( "#error").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#error").slideUp( "slow" );
+                    error: function () {
+                        $("#loader").hide();
+                        $("#error").slideDown("slow");
+                        setTimeout(function () {
+                            $("#error").slideUp("slow");
                         }, 3000);
                     }
                 });

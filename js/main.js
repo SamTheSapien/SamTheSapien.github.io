@@ -183,29 +183,34 @@ $(document).ready(function () {
             },
 
             submitHandler: function (form) {
-                $.ajax({
-                    type: "POST",
-                    url: $(form).attr("action"),
-                    data: $(form).serialize(),
-                    dataType: "json",
-                    headers: {
-                        "Accept": "application/json"
-                    },
-                    success: function () {
-                        $("#loader").hide();
-                        $("#success").slideDown("slow");
-                        setTimeout(function () {
-                            $("#success").slideUp("slow");
-                        }, 3000);
-                        form.reset();
-                    },
-                    error: function () {
-                        $("#loader").hide();
-                        $("#error").slideDown("slow");
-                        setTimeout(function () {
-                            $("#error").slideUp("slow");
-                        }, 3000);
-                    }
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('6Ld4MM0sAAAAAOpStKxkxRZ0sqmyS23VDvhFvjxf', {action: 'submit'}).then(function(token) {
+                        $('#g-recaptcha-response').val(token);
+                        $.ajax({
+                            type: "POST",
+                            url: $(form).attr("action"),
+                            data: $(form).serialize(),
+                            dataType: "json",
+                            headers: {
+                                "Accept": "application/json"
+                            },
+                            success: function () {
+                                $("#loader").hide();
+                                $("#success").slideDown("slow");
+                                setTimeout(function () {
+                                    $("#success").slideUp("slow");
+                                }, 3000);
+                                form.reset();
+                            },
+                            error: function () {
+                                $("#loader").hide();
+                                $("#error").slideDown("slow");
+                                setTimeout(function () {
+                                    $("#error").slideUp("slow");
+                                }, 3000);
+                            }
+                        });
+                    });
                 });
                 return false;
             }

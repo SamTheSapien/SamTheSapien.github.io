@@ -2107,6 +2107,14 @@ blockquote:before,
 	color: #ca1d1d;
 }
 
+#g-recaptcha-response {
+	display: block !important;
+	position: absolute;
+	margin: -50px 0 0 0 !important;
+	z-index: -999999;
+	opacity: 0;
+}
+
 /* ---------------------------------
 		10. Blog Page Css
 --------------------------------- */

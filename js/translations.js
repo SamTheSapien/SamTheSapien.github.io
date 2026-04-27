@@ -25,8 +25,8 @@ const translations = {
     "pt": {
         "nav_cv": "samthesapien",
         "blog_1": "Visita o meu blog!",
-        "blog_2": "Com Hack The Box",
-        "blog_3": "e write-ups de CTFs",
+        "blog_2": "Com write-ups de",
+        "blog_3": "Hack The Box e CTFs",
         "banner_prefix": "Eu sou",
         "role_1": "Investigador de Cibersegurança",
         "role_2": "Pentester Especialista",

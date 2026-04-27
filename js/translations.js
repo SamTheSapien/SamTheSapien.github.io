@@ -1,13 +1,13 @@
 const translations = {
     "en": {
-        "nav_cv": "Samuel Viegas - Cybersecurity Researcher",
+        "nav_cv": "samthesapien",
         "blog_1": "Check my blog!",
         "blog_2": "With Hack The Box",
         "blog_3": "and CTF walkthroughs",
         "banner_prefix": "I am a",
         "role_1": "Cybersecurity Researcher",
         "role_2": "Specialist Pentester",
-        "role_3": "DFIR & Forensics learner",
+        "role_3": "DFIR & Forensics investigator",
         "role_4": "CTF player",
         "contact_title": "Contact",
         "contact_email": "Email",
@@ -23,14 +23,14 @@ const translations = {
         "form_error": "Error occurred while sending email. Please try again later."
     },
     "pt": {
-        "nav_cv": "Samuel Viegas - Investigador de Cibersegurança",
+        "nav_cv": "samthesapien",
         "blog_1": "Visita o meu blog!",
         "blog_2": "Com Hack The Box",
         "blog_3": "e write-ups de CTFs",
         "banner_prefix": "Eu sou",
         "role_1": "Investigador de Cibersegurança",
         "role_2": "Pentester Especialista",
-        "role_3": "Estudante de DFIR e Forense",
+        "role_3": "Investigador de DFIR e Forense",
         "role_4": "Jogador de CTF",
         "contact_title": "Contacto",
         "contact_email": "Email",
